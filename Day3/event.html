@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Event Example</title>
+  <style>
+    #myElement {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="myElement"></div>
+
+<script>
+  // Get the element by its ID
+  const myElement = document.getElementById('myElement');
+
+  // Add a click event listener
+  myElement.addEventListener('click', function(event) {
+    alert('Mouse clicked!'); // Replace this with your desired action
+  });
+
+  // Additional event handlers
+  myElement.addEventListener('mouseover', function(event) {
+    myElement.style.backgroundColor = 'lightcoral';
+  });
+
+  myElement.addEventListener('mouseout', function(event) {
+    myElement.style.backgroundColor = 'lightblue';
+  });
+</script>
+
+</body>
+</html>
